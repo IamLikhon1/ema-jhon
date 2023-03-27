@@ -37,3 +37,14 @@
 .read-the-docs {
   color: #888;
 }
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background: lightgray;
+}
+::-webkit-scrollbar-thumb{
+    background: #1C2B35;
+    border-radius: 10px;
+}
