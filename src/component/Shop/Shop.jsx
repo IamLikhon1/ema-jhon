@@ -14,7 +14,20 @@ const Shop = () => {
     },[])
     useEffect(()=>{
         const storeCart=getShoppingCart()
-    },[])
+        const savedCart=[]
+        for (const id in storeCart){
+            const addedProduct=products.find(product=>product.id===id)
+            if(addedProduct){
+
+                const quantity=storeCart[id]
+                addedProduct.quantity=quantity
+                savedCart.push(addedProduct)
+            }
+            console.log(addedProduct);
+
+        }
+        setCart(savedCart)
+    },[products])
     // handel ti pathano hoise nicce dike 
     const handelAddToCart=(product)=>{
         // console.log(product);
