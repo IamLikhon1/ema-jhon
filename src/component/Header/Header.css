@@ -18,3 +18,7 @@
 .header a:hover{
     color: lawngreen;
 }
+.text-white{
+    color: white;
+    padding-left: 5px;
+}
